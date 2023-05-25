@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,15 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instruments for various games',
       home: Scaffold(
+        backgroundColor: Colors.greenAccent,
         appBar: AppBar(
-          title: Text(
-            'What instrumets you need?',
-            style: GoogleFonts.rubikPuddles(
-              textStyle: const TextStyle(
-                color: Colors.pink,
-              ),
+          title: const Text(
+            'What instrumets you need ?',
+            style: TextStyle(
+              fontSize: 24,
             ),
           ),
+          backgroundColor: Colors.green,
           centerTitle: true,
           toolbarHeight: 250,
           shape: const RoundedRectangleBorder(
@@ -29,8 +28,19 @@ class MyApp extends StatelessWidget {
                 bottomRight: Radius.circular(35),
                 bottomLeft: Radius.circular(35)),
           ),
+          actions: [
+            Column(
+              children: [
+                IconButton(
+                  icon: const Icon(
+                    Icons.info,
+                  ),
+                  onPressed: () {},
+                ),
+              ],
+            )
+          ],
         ),
-        backgroundColor: Colors.greenAccent,
       ),
     );
   }
