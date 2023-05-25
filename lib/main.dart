@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(home: MyApp()));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,11 +37,27 @@ class MyApp extends StatelessWidget {
             Column(
               children: [
                 IconButton(
-                  icon: const Icon(
-                    Icons.info,
-                  ),
-                  onPressed: () {},
-                ),
+                    icon: const Icon(
+                      Icons.info,
+                    ),
+                    onPressed: () {
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Info'),
+                              content: const Text(
+                                  'Simple app that can be used for various games np. game of states, cities or monopoly '),
+                              actions: [
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: Text('Back'))
+                              ],
+                            );
+                          });
+                    }),
               ],
             )
           ],
