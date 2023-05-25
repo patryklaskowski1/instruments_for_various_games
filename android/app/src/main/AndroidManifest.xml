@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.instruments_for_various_games">
+    package="com.patryklaskowski.instruments_for_various_games">
    <application
         android:label="instruments_for_various_games"
         android:name="${applicationName}"
