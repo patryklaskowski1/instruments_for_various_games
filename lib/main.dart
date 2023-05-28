@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
               fontSize: 24,
             ),
           ),
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 33, 99, 35),
           centerTitle: true,
           toolbarHeight: 250,
           shape: const RoundedRectangleBorder(
@@ -50,10 +50,11 @@ class _MyAppState extends State<MyApp> {
                               'Simple app that can be used for various games np. monopoly, game of states, cities or many other'),
                           actions: [
                             TextButton(
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
-                                child: const Text('Back'))
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              child: const Text('Back'),
+                            )
                           ],
                         );
                       },
@@ -70,21 +71,39 @@ class _MyAppState extends State<MyApp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                InkWell(
-                  onTap: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(20.0),
-                    child: Image.asset('images/dice.jpg',
-                        width: 100.0, height: 100.0),
-                  ),
+                Column(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset('images/dice.jpg',
+                            width: 120.0, height: 120.0),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    const Text(
+                      'Dice',
+                      style: TextStyle(fontSize: 24, color: Colors.white),
+                    ),
+                  ],
                 ),
-                InkWell(
-                  onTap: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(25.0),
-                    child: Image.asset('images/AtoZ.jpg',
-                        width: 110.0, height: 110.0),
-                  ),
+                Column(
+                  children: [
+                    InkWell(
+                      onTap: () {},
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset('images/AtoZ.jpg',
+                            width: 120.0, height: 120.0),
+                      ),
+                    ),
+                    const SizedBox(height: 14),
+                    const Text(
+                      'Random letter',
+                      style: TextStyle(fontSize: 22, color: Colors.white),
+                    ),
+                  ],
                 ),
               ],
             ),
