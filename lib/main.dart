@@ -37,29 +37,31 @@ class _MyAppState extends State<MyApp> {
             Column(
               children: [
                 IconButton(
-                    icon: const Icon(
-                      Icons.info,
-                    ),
-                    onPressed: () {
-                      showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              title: const Text('Info'),
-                              content: const Text(
-                                  'Simple app that can be used for various games np. monopoly, game of states, cities or many other'),
-                              actions: [
-                                TextButton(
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                    child: const Text('Back'))
-                              ],
-                            );
-                          });
-                    }),
+                  icon: const Icon(
+                    Icons.info,
+                  ),
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: const Text('Info'),
+                          content: const Text(
+                              'Simple app that can be used for various games np. monopoly, game of states, cities or many other'),
+                          actions: [
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Text('Back'))
+                          ],
+                        );
+                      },
+                    );
+                  },
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
