@@ -47,13 +47,13 @@ class _MyAppState extends State<MyApp> {
                             return AlertDialog(
                               title: const Text('Info'),
                               content: const Text(
-                                  'Simple app that can be used for various games np. game of states, cities or monopoly '),
+                                  'Simple app that can be used for various games np. monopoly, game of states, cities or many other'),
                               actions: [
                                 TextButton(
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
-                                    child: Text('Back'))
+                                    child: const Text('Back'))
                               ],
                             );
                           });
