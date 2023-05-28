@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Instruments for various games',
       home: Scaffold(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: const Color.fromARGB(105, 33, 76, 30),
         appBar: AppBar(
           title: const Text(
             'What instrumets you need ?',
@@ -59,6 +59,32 @@ class _MyAppState extends State<MyApp> {
                       },
                     );
                   },
+                ),
+              ],
+            ),
+          ],
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                InkWell(
+                  onTap: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.asset('images/dice.jpg',
+                        width: 100.0, height: 100.0),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(25.0),
+                    child: Image.asset('images/AtoZ.jpg',
+                        width: 110.0, height: 110.0),
+                  ),
                 ),
               ],
             ),
