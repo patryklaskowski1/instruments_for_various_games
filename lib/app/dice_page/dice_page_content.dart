@@ -27,10 +27,16 @@ class DicePageContent extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(
-              image: AssetImage(''),
+            InkWell(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(50.0),
+                child: Image.asset('images/dice1.png',
+                    width: 180.0, height: 180.0),
+              ),
             ),
+            const SizedBox(height: 70),
             ElevatedButton(
               onPressed: () {},
               child: Text(
