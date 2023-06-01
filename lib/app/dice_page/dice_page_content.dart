@@ -50,16 +50,17 @@ class _DicePageContentState extends State<DicePageContent> {
               ],
             ),
             const SizedBox(height: 70),
-            ElevatedButton(
+            ElevatedButton.icon(
+                icon: const Icon(
+                  Icons.loop,
+                  size: 24.0,
+                ),
                 style: ElevatedButton.styleFrom(
                     primary: const Color.fromARGB(255, 33, 99, 35),
                     fixedSize: const Size(180, 80),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50))),
-                child: const Text(
-                  'ROLL',
-                  style: TextStyle(fontSize: 24),
-                ),
+                label: const Text('ROLL'),
                 onPressed: () {
                   setState(() {
                     number = randomNumber.nextInt(6) + 1;

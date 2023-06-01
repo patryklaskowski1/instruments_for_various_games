@@ -31,6 +31,21 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
               bottomLeft: Radius.circular(35)),
         ),
       ),
+      body: Center(
+        child: ElevatedButton.icon(
+          icon: const Icon(
+            Icons.sync,
+            size: 24.0,
+          ),
+          style: ElevatedButton.styleFrom(
+              primary: const Color.fromARGB(255, 33, 99, 35),
+              fixedSize: const Size(180, 80),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50))),
+          label: const Text('DRAW LETTER'),
+          onPressed: () {},
+        ),
+      ),
     );
   }
 }
