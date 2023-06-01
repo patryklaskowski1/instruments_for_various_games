@@ -25,6 +25,21 @@ class DicePageContent extends StatelessWidget {
               bottomLeft: Radius.circular(35)),
         ),
       ),
+      body: Center(
+        child: Column(
+          children: [
+            Image(
+              image: AssetImage(''),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'ROLL',
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
