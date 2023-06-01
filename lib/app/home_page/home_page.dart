@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instruments_for_various_games/app/dice_page/dice_page_content.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -65,7 +66,13 @@ class HomePage extends StatelessWidget {
               Column(
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => const DicePageContent(),
+                        ),
+                      );
+                    },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
                       child: Image.asset('images/dice.jpg',
