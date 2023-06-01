@@ -13,7 +13,7 @@ class DicePageContent extends StatelessWidget {
         title: const Text(
           'Roll your dice',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 32,
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 33, 99, 35),
