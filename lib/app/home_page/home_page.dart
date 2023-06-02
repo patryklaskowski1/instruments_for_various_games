@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                       return AlertDialog(
                         title: const Text('Information'),
                         content: const Text(
-                            'A simple application that you can use for games where you use a dice or need a random letter. Such as monopoly,countries,cities game.'),
+                            'A simple application that you can use for games where you use a dice or need a random letter. Such as monopoly,countries,cities game. APPLICATION CREATED TO GAIN PRACTICE'),
                         actions: [
                           TextButton(
                             onPressed: () {
