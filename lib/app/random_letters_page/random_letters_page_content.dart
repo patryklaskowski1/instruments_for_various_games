@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class RandomLettersPageContent extends StatefulWidget {
@@ -11,6 +13,34 @@ class RandomLettersPageContent extends StatefulWidget {
 }
 
 class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
+  final List<String> letters = [
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F',
+    'G',
+    'H',
+    'I',
+    'J',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'R',
+    'S',
+    'T',
+    'U',
+    'W',
+    'X',
+    'Y',
+    'Z',
+  ];
+  String letter = 'X';
+  Random draw = Random();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,18 +62,48 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
         ),
       ),
       body: Center(
-        child: ElevatedButton.icon(
-          icon: const Icon(
-            Icons.sync,
-            size: 24.0,
-          ),
-          style: ElevatedButton.styleFrom(
-              primary: const Color.fromARGB(255, 33, 99, 35),
-              fixedSize: const Size(180, 80),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50))),
-          label: const Text('DRAW LETTER'),
-          onPressed: () {},
+        child: Column(
+          children: [
+            const SizedBox(height: 60),
+            Container(
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color.fromARGB(255, 33, 99, 35),
+              ),
+              child: Center(
+                child: Text(
+                  letter,
+                  style: const TextStyle(
+                    fontSize: 200,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            ElevatedButton.icon(
+              icon: const Icon(
+                Icons.sync,
+                size: 24.0,
+              ),
+              style: ElevatedButton.styleFrom(
+                  primary: const Color.fromARGB(255, 33, 99, 35),
+                  fixedSize: const Size(180, 80),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50))),
+              label: const Text(
+                'DRAW LETTER',
+                style: TextStyle(fontSize: 18),
+              ),
+              onPressed: () {
+                setState(() {
+                  letter = letters[draw.nextInt(letters.length)];
+                });
+              },
+            ),
+          ],
         ),
       ),
     );
