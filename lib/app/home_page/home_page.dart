@@ -38,9 +38,9 @@ class HomePage extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: const Text('Info'),
+                        title: const Text('Information'),
                         content: const Text(
-                            'Simple app that can be used for various games np. monopoly, game of states, cities or many other'),
+                            'A simple application that you can use for games where you use a dice or need a random letter. Such as monopoly,countries,cities game.'),
                         actions: [
                           TextButton(
                             onPressed: () {
