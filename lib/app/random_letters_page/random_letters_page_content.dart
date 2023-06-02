@@ -44,7 +44,7 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(105, 33, 76, 30),
+      backgroundColor: Color.fromRGBO(33, 76, 30, 0.412),
       appBar: AppBar(
         title: const Text(
           'Draw your letter',
