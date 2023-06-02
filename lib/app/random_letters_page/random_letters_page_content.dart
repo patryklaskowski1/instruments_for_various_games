@@ -60,6 +60,42 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
               bottomRight: Radius.circular(35),
               bottomLeft: Radius.circular(35)),
         ),
+        actions: [
+          Column(
+            children: [
+              Row(
+                children: [
+                  IconButton(
+                    icon: const Icon(
+                      Icons.info,
+                      size: 30,
+                    ),
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text('Letters you can draw'),
+                            content: const Text(
+                                'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,R,S,T,U,W,X,Y,Z'),
+                            actions: [
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Text('Back'),
+                              )
+                            ],
+                          );
+                        },
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
       ),
       body: Center(
         child: Column(
