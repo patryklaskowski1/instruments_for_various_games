@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color.fromARGB(105, 33, 76, 30),
       appBar: AppBar(
         title: const Text(
-          'What instrumets you need ?',
+          'What you need ?',
           style: TextStyle(
             fontSize: 24,
           ),
