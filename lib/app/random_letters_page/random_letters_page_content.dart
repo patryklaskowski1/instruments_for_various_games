@@ -83,6 +83,15 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
+                                style: TextButton.styleFrom(
+                                  primary: Colors.white,
+                                  elevation: 5,
+                                  backgroundColor:
+                                      const Color.fromARGB(255, 33, 99, 35),
+                                  shape: const BeveledRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(5))),
+                                ),
                                 child: const Text('Back'),
                               )
                             ],
