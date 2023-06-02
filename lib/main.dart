@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Instruments for various games',
+      title: 'Tools for various games',
       home: HomePage(),
     );
   }
