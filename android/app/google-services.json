@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "682284846181",
+    "project_id": "tools-for-various-games",
+    "storage_bucket": "tools-for-various-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682284846181:android:5048660477cd738ddc0a8c",
+        "android_client_info": {
+          "package_name": "com.patryklaskowski.instruments_for_various_games"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682284846181-8ebrl1v8sdm2nk0qa5hqp2q7bu0iq4v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUoXaXi5FXu1-pGp-Kvc8QkRlmAvQcMG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682284846181-8ebrl1v8sdm2nk0qa5hqp2q7bu0iq4v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
