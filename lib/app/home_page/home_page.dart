@@ -1,9 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:instruments_for_various_games/app/dice_page/dice_page_content.dart';
 import 'package:instruments_for_various_games/app/random_letters_page/random_letters_page_content.dart';
+import 'package:instruments_for_various_games/core/responsive_layout.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const ResponsiveLayout(
+        ultrawide: _WideHomePage(),
+        wide: _WideHomePage(),
+        narrow: _WideHomePage());
+  }
+}
+
+class _WideHomePage extends StatelessWidget {
+  const _WideHomePage({
     Key? key,
   }) : super(key: key);
 
