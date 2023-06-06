@@ -44,7 +44,7 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(33, 76, 30, 0.412),
+      backgroundColor: const Color.fromRGBO(33, 76, 30, 0.412),
       appBar: AppBar(
         title: const Text(
           'Draw your letter',
@@ -84,7 +84,7 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
                                   Navigator.of(context).pop();
                                 },
                                 style: TextButton.styleFrom(
-                                  primary: Colors.white,
+                                  foregroundColor: Colors.white,
                                   elevation: 5,
                                   backgroundColor:
                                       const Color.fromARGB(255, 33, 99, 35),
@@ -134,7 +134,7 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
                 size: 24.0,
               ),
               style: ElevatedButton.styleFrom(
-                  primary: const Color.fromARGB(255, 33, 99, 35),
+                  backgroundColor: const Color.fromARGB(255, 33, 99, 35),
                   fixedSize: const Size(180, 80),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50))),

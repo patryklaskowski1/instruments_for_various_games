@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                               Navigator.of(context).pop();
                             },
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
+                              foregroundColor: Colors.white,
                               elevation: 5,
                               backgroundColor:
                                   const Color.fromARGB(255, 33, 99, 35),
