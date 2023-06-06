@@ -30,7 +30,7 @@ class _UltraWideHomePage extends StatelessWidget {
         title: const Text(
           'What you need ?',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 36,
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 33, 99, 35),
@@ -158,7 +158,7 @@ class _WideHomePage extends StatelessWidget {
         title: const Text(
           'What you need ?',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 42,
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 33, 99, 35),
