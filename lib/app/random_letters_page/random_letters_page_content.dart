@@ -49,7 +49,7 @@ class _RandomLettersPageContentState extends State<RandomLettersPageContent> {
         title: const Text(
           'Draw your letter',
           style: TextStyle(
-            fontSize: 32,
+            fontSize: 28,
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 33, 99, 35),
